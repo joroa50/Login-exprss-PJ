@@ -12,6 +12,9 @@ app.use(cors({
 }))
 app.use(session({
   secret: 'aaasdkñkjgfdkdlñkflddlk',
+  cookie: {
+    maxAge: 60000
+  },
 }
 ))
 // Create the connection to database
